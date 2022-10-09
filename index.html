@@ -209,7 +209,7 @@
        
        <!-- Form -->
        <div class="contact-form">
-           <form method="post" action="https://script.google.com/macros/s/AKfycbyjTn19P3sNA1HfW-R4fIAXs5Rp4WONRsM1p1wEgsBS7xmigrEK8mrY0kSIG8jmm4x-hQ/exec">
+           <form method="post" action="" name="formName">
                <input id="name" name="name" type="name" placeholder="Your Name*" class="form-control" required>
                <input id="email" name="email" type="email" placeholder="Your Email*" class="form-control" required>
                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message Here!*" class="form-control" required></textarea>
@@ -238,6 +238,17 @@
    
        <script src="./js/script.js"></script>
        <script src="https://jsuites.net/v4/jsuites.js"></script>      
-       
+       <script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbyjTn19P3sNA1HfW-R4fIAXs5Rp4WONRsM1p1wEgsBS7xmigrEK8mrY0kSIG8jmm4x-hQ/exec'
+			const form = document.forms['formName']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+		  </script>
 </body>
 </html>
