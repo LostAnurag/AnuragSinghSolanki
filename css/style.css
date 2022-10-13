@@ -231,6 +231,12 @@ span {
 .java-bar {
   width: 69%;
 }
+.bts-bar {
+  width: 83%;
+}
+.tail-bar {
+  width: 76%;
+}
 .services-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
