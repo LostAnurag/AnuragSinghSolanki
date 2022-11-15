@@ -1,4 +1,5 @@
-	// Sticky Navbar    let header = document.querySelector('header');
+	// Sticky Navbar    
+    let header = document.querySelector('header');
 
     let menu = document.querySelector('#menu-icon');
 
