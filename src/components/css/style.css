@@ -1,0 +1,19 @@
+.right {
+    animation: transitionIn 0.90s;
+}
+.logo {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 0px;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
