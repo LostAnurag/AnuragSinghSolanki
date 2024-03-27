@@ -23,7 +23,7 @@ const Stacks = () => {
         <li className='text-white flex items-center'><i className='mr-2'><AiFillHtml5/></i>Html</li>
         <li className='text-white flex items-center'><i className='mr-2'><DiCss3/></i>CSS</li>
         <li className='text-white flex items-center'><i className='mr-2'><DiJavascript/></i>Javascript</li>
-        <li className='text-white flex items-center'><i className='mr-2'><FaReact/></i>React</li>
+        <li className='text-white flex items-center'><i className='mr-2'><FaReact/></i>React JS/Native</li>
         <li className='text-white flex items-center'><i className='mr-2'><SiTailwindcss/></i>Tailwind CSS</li>
         </ul>
         
